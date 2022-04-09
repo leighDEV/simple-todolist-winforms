@@ -34,6 +34,7 @@
             this.btnClearChecked = new System.Windows.Forms.Button();
             this.btnClearAll = new System.Windows.Forms.Button();
             this.lblWhatToDo = new System.Windows.Forms.Label();
+            this.btnClear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tbToDo
@@ -50,10 +51,11 @@
             this.btnAdd.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.Location = new System.Drawing.Point(18, 150);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(361, 43);
+            this.btnAdd.Size = new System.Drawing.Size(181, 43);
             this.btnAdd.TabIndex = 1;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // chklbToDoList
             // 
@@ -73,6 +75,7 @@
             this.btnClearChecked.TabIndex = 1;
             this.btnClearChecked.Text = "Clear Checked";
             this.btnClearChecked.UseVisualStyleBackColor = true;
+            this.btnClearChecked.Click += new System.EventHandler(this.btnClearChecked_Click);
             // 
             // btnClearAll
             // 
@@ -83,6 +86,7 @@
             this.btnClearAll.TabIndex = 1;
             this.btnClearAll.Text = "Clear All";
             this.btnClearAll.UseVisualStyleBackColor = true;
+            this.btnClearAll.Click += new System.EventHandler(this.btnClearAll_Click);
             // 
             // lblWhatToDo
             // 
@@ -94,6 +98,17 @@
             this.lblWhatToDo.TabIndex = 3;
             this.lblWhatToDo.Text = "WHAT TO DO?";
             // 
+            // btnClear
+            // 
+            this.btnClear.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.Location = new System.Drawing.Point(198, 150);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(181, 43);
+            this.btnClear.TabIndex = 1;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
@@ -104,12 +119,13 @@
             this.Controls.Add(this.chklbToDoList);
             this.Controls.Add(this.btnClearAll);
             this.Controls.Add(this.btnClearChecked);
+            this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.tbToDo);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.MinimizeBox = false;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "What to do?";
             this.ResumeLayout(false);
@@ -125,6 +141,7 @@
         private System.Windows.Forms.Button btnClearChecked;
         private System.Windows.Forms.Button btnClearAll;
         private System.Windows.Forms.Label lblWhatToDo;
+        private System.Windows.Forms.Button btnClear;
     }
 }
 

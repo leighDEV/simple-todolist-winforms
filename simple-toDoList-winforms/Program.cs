@@ -16,7 +16,7 @@ namespace simple_toDoList_winforms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new ToDoListForm());
         }
     }
 }
