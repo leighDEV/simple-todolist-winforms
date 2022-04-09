@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace simple_toDoList_winforms
 {
-    public partial class Form1 : Form
+    public partial class ToDoListForm : Form
     {
-        public Form1()
+        public ToDoListForm()
         {
             InitializeComponent();
         }
@@ -36,6 +36,10 @@ namespace simple_toDoList_winforms
             }
         }
 
-        private void btnClearAll_Click(object sender, EventArgs e) => chklbToDoList.Items.Clear();
+        private void btnClearAll_Click(object sender, EventArgs e)
+        {
+            chklbToDoList.Items.Clear();
+            tbToDo.ResetText();
+        }
     }
 }
